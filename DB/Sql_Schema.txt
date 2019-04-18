@@ -1,0 +1,19 @@
+create database test;
+
+CREATE TABLE log_entry (
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  client varchar(255) DEFAULT NULL,
+  date datetime DEFAULT NULL,
+  http_status varchar(255) DEFAULT NULL,
+  ip varchar(255) DEFAULT NULL,
+  method varchar(255) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB AUTO_INCREMENT=116485 DEFAULT CHARSET=latin1
+
+
+CREATE TABLE blockedip (
+  id bigint(20) NOT NULL AUTO_INCREMENT,
+  comment varchar(255) DEFAULT NULL,
+  ip varchar(255) DEFAULT NULL,
+  PRIMARY KEY (id)
+) ENGINE=InnoDB AUTO_INCREMENT=16 DEFAULT CHARSET=latin1
